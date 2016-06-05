@@ -7,15 +7,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
  - Open Source
  - Prepare module OTF
- 	- Module `Auth`: Manager Authentication
- 	- Module `Database`: Database references
- 	- Module `DatabaseRef`: reference to database
- 	- Module `OTF`: Manager app
- 	- Module `Session`: Session control
- 	- Module `Symbols`: List of Symbols
- 	- Module `Transport`: Transport of data
- 	- Module `TransportFetch`: transport of data with [Fetch]
- 	- Module `TransportStorage`: transport of data with [LocalStorage]
+    - Module `Auth`: Manager Authentication
+    - Module `Database`: Database references
+    - Module `DatabaseRef`: reference to database
+    - Module `OTF`: Manager app
+    - Module `Session`: Session control
+    - Module `Symbols`: List of Symbols
+    - Module `Transport`: Transport of data
+    - Module `TransportFetch`: transport of data with [Fetch]
+    - Module `TransportStorage`: transport of data with [LocalStorage]
 
 
 [Fetch]: https://developer.mozilla.org/en/docs/Web/API/Fetch_API
