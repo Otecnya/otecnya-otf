@@ -1,4 +1,5 @@
 import { SymbolOTF, SymbolSession } from './Symbols'
+import TransportStorage from './TransportStorage'
 
 export class Session {
 	constructor( otf ) {
@@ -6,7 +7,7 @@ export class Session {
 		this.tokenId = null
 		this.email = null
 		this.uid = null
-		this[ SymbolSession ] = new OTFTransportStorage( SymbolSession )
+		this[ SymbolSession ] = new TransportStorage( SymbolSession )
 		this.load()
 	}
 	get otf() {
