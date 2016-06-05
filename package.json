@@ -1,0 +1,23 @@
+{
+  "name": "otecnya-otf",
+  "version": "0.1.0",
+  "description": "...",
+  "main": "lib/OTF.js",
+  "scripts": {
+    "gulp": "node_modules/.bin/gulp"
+  },
+  "keywords": [],
+  "author": "Jonathan Delgado <hi@jon.soy> (http://jon.soy/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "babel": {
+    "presets": "es2015"
+  }
+}
