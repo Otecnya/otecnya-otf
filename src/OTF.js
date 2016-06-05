@@ -1,5 +1,9 @@
 import { SymbolUri, SymbolApiKey, SymbolTransport, SymbolAuth, SymbolSimpleTransportStorage, SymbolSession, SymbolDatabase } from './Symbols'
-
+import TransportFetch from './TransportFetch'
+import Auth from './Auth'
+import TransportStorage from './TransportStorage'
+import Session from './Session'
+import Database from './Database'
 
 export class OTF {
 	constructor( {
@@ -8,11 +12,11 @@ export class OTF {
 	} = {} ) {
 		this[ SymbolUri ] = url
 		this[ SymbolApiKey ] = key
-		this[ SymbolTransport ] = new OTFTransportFetch( this )
-		this[ SymbolAuth ] = new OTFAuth( this )
-		this[ SymbolSimpleTransportStorage ] = new OTFTransportStorage( this )
-		this[ SymbolSession ] = new OTFSession( this )
-		this[ SymbolDatabase ] = new OTFDatabase( this )
+		this[ SymbolTransport ] = new TransportFetch( this )
+		this[ SymbolAuth ] = new Auth( this )
+		this[ SymbolSimpleTransportStorage ] = new TransportStorage( this )
+		this[ SymbolSession ] = new Session( this )
+		this[ SymbolDatabase ] = new Database( this )
 	}
 	get url() {
 		return this[ SymbolUri ]
