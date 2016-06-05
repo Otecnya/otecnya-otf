@@ -4,7 +4,8 @@
   "description": "...",
   "main": "lib/OTF.js",
   "scripts": {
-    "gulp": "node_modules/.bin/gulp"
+    "gulp": "node_modules/.bin/gulp",
+    "prepublish": "npm run-script gulp"
   },
   "keywords": [],
   "author": "Jonathan Delgado <hi@jon.soy> (http://jon.soy/)",
